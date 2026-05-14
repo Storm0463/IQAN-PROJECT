@@ -13,5 +13,10 @@ collections:
         label: "Home Page"
         name: "home"
         fields:
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: "Body", name: "body", widget: "markdown"}
+          - {label: "Hero Title", name: "hero_title", widget: "string"}
+          - {label: "Hero Subtext", name: "hero_text", widget: "text"}
+          - {label: "About Section Body", name: "about_body", widget: "markdown"}
+          - {label: "Mission Statement", name: "mission_text", widget: "text"}
+          - {label: "Vision Statement", name: "vision_text", widget: "text"}
+          - {label: "Contact Email", name: "contact_email", widget: "string"}
+          - {label: "Contact Phone", name: "contact_phone", widget: "string"}
