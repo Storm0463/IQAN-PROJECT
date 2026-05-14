@@ -1,7 +1,6 @@
 backend:
   name: git-gateway
   branch: main
-
 media_folder: "images"
 public_folder: "images"
 
@@ -10,17 +9,16 @@ collections:
     label: "Website Content"
     files:
       - file: "index.html"
-        label: "Home Page"
+        label: "Main Homepage"
         name: "home"
         format: "frontmatter"
         fields:
           - {label: "Hero Title", name: "hero_title", widget: "string"}
           - {label: "Hero Description", name: "hero_desc", widget: "text"}
-          - {label: "Hero Image", name: "hero_img", widget: "image"}
-          - label: "Latest Updates"
-            name: "updates"
-            widget: "list"
-            fields:
-              - {label: "Title", name: "title", widget: "string"}
-              - {label: "Image", name: "image", widget: "image"}
-              - {label: "Summary", name: "body", widget: "text"}
+          - {label: "Hero Image", name: "hero_image", widget: "image"}
+          - {label: "About Section Text", name: "about_text", widget: "text"}
+          - {label: "Mission Statement", name: "mission_text", widget: "text"}
+          - {label: "Vision Statement", name: "vision_text", widget: "text"}
+          - {label: "Disclaimer Notice", name: "disclaimer_notice", widget: "text"}
+          - {label: "Contact Phone", name: "contact_phone", widget: "string"}
+          - {label: "Contact Email", name: "contact_email", widget: "string"}
