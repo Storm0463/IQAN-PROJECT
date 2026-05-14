@@ -7,16 +7,20 @@ public_folder: "images"
 
 collections:
   - name: "pages"
-    label: "Pages"
+    label: "Website Content"
     files:
       - file: "index.html"
         label: "Home Page"
         name: "home"
+        format: "frontmatter"
         fields:
           - {label: "Hero Title", name: "hero_title", widget: "string"}
-          - {label: "Hero Subtext", name: "hero_text", widget: "text"}
-          - {label: "About Section Body", name: "about_body", widget: "markdown"}
-          - {label: "Mission Statement", name: "mission_text", widget: "text"}
-          - {label: "Vision Statement", name: "vision_text", widget: "text"}
-          - {label: "Contact Email", name: "contact_email", widget: "string"}
-          - {label: "Contact Phone", name: "contact_phone", widget: "string"}
+          - {label: "Hero Description", name: "hero_desc", widget: "text"}
+          - {label: "Hero Image", name: "hero_img", widget: "image"}
+          - label: "Latest Updates"
+            name: "updates"
+            widget: "list"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Image", name: "image", widget: "image"}
+              - {label: "Summary", name: "body", widget: "text"}
