@@ -1,9 +1,9 @@
 backend:
   name: github
-  repo: Storm0463/IQAN-PROJECT # This matches your repo name
+  repo: Storm0463/IQAN-PROJECT
   branch: main
 
-media_folder: "images" # Where your photos are stored
+media_folder: "images"
 public_folder: "images"
 
 collections:
